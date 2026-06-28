@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chapter 5 - The Four Pointer</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .story-header {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+    }
+
+    .story-header h1 {
+      margin: 0;
+    }
+
+    .comic-wrapper {
+      position: relative;
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .comic-wrapper img {
+      width: 100%;
+      display: block;
+    }
+
+    .bubble {
+      position: absolute;
+      background: white;
+      padding: 12px 16px;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      font-size: 14px;
+      max-width: 220px;
+      line-height: 1.4;
+    }
+
+    .bubble strong {
+      color: #2c7a7b;
+    }
+
+    .b1 { top: 18%; left: 8%; }
+    .b2 { top: 34%; right: 9%; }
+    .b3 { bottom: 30%; left: 10%; }
+    .b4 { bottom: 12%; right: 10%; }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="story-header">
+    <h1>Chapter 5 — The Four Pointer</h1>
+    <p>
+      At some point, story estimation stopped being a team activity and became
+      a live demonstration of Sid's deep and lasting belief in one number.
+    </p>
+  </div>
+
+  <div class="comic-wrapper">
+    <img src="chapter5.png" alt="Chapter 5 Comic">
+
+    <div class="bubble b1">
+      “This one feels kinda small...”
+    </div>
+
+    <div class="bubble b2">
+      <strong>“Honestly? That's a 4-pointer.”</strong>
+    </div>
+
+    <div class="bubble b3">
+      “What about this huge refactor?”
+    </div>
+
+    <div class="bubble b4">
+      <strong>“Also 4.”</strong>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>

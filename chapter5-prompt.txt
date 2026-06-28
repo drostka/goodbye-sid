@@ -1,0 +1,75 @@
+CHAPTER 5: THE FAREWELL
+=====================================
+
+Create a warm, illustrated comic page matching this EXACT visual style:
+
+STYLE REFERENCE:
+- Soft illustrated comic art with warm cream/beige paper texture
+- Hand-drawn panel borders with slight imperfections  
+- Warm cinematic lighting with bokeh city lights in backgrounds
+- Speech bubbles with thin black outlines
+- Yellow tape-style "CHAPTER 5" badge in top-left corner
+- Large bold hand-drawn title: "THE FAREWELL"
+- Green Manulife color accents (#2d5a27)
+- Emoji decorations scattered throughout (⭐ 🚀 💚 😎 ✨)
+- Bottom green banner with chapter summary/tagline
+
+CHARACTER - SID (main character):
+- Indian man with curly black hair and beard
+- Dark navy Manulife hoodie with "/// Manulife" logo
+- Calm, confident expression with slight smile
+- Sometimes wearing sunglasses emoji style 😎
+
+OTHER CHARACTERS:
+- Woman with long dark hair in cream/beige sweater
+- Woman with brown hair in green sweater  
+- Man with light brown/blonde hair in green hoodie
+- All wearing casual office attire, some with Manulife gear
+
+LAYOUT (6 rows):
+
+ROW 1 - TITLE:
+[Yellow badge: "CHAPTER 5"] [Large title: "THE FAREWELL"] [Small text bubble: "Every legend has a final chapter."]
+Narration text: "Sid taught us a lot. But the biggest lesson? How to say goodbye with style."
+
+ROW 2 - THE ANNOUNCEMENT:
+- Left panel: Team gathered around, someone asking "So... you're really leaving?"
+- Right panel: Sid with calm smile: "Time for the next adventure." 
+- Sticky note: "NEW CHAPTER LOADING..."
+
+ROW 3 - THE MEMORIES:
+- Left panel: Flashback collage - "4 pointers", "The Rule", team moments
+- Middle panel: Team member: "Remember when everything was a 4-pointer?" 
+- Right panel: Another: "Or when he told us to focus on OUR problems?" with "HAHA TRUE!"
+
+ROW 4 - THE WISDOM:
+- Left panel: Sid pointing up: "Keep it simple. Stay focused."
+- Right panel: Team listening intently with notepad "SID'S FINAL 4 POINTS"
+- Sticky notes: "1. CONTEXT 2. PROBLEM 3. SOLUTION 4. IMPACT"
+
+ROW 5 - THE GOODBYE:
+- Left panel: Team group hug/fist bumps with "BUMP!" effect
+- Right panel: Sid with sunglasses emoji look: "You've got this."
+- Polaroid-style photo: "SPONSOR TEAM 💚" with everyone smiling
+
+ROW 6 - BOTTOM BANNER:
+Green banner with star icon: 
+"Not goodbye. Just... see you in the next sprint. 🚀"
+"THAT'S THE SID LEGACY." 
+[Sunglasses emoji 😎]
+
+SPEECH BUBBLES TO INCLUDE:
+1. "So... you're really leaving?"
+2. "Time for the next adventure."
+3. "Remember when everything was a 4-pointer?"
+4. "Keep it simple. Stay focused."
+5. "You've got this."
+
+TONE:
+Heartfelt but not sad. Celebratory send-off energy. Mix of nostalgia (callbacks to previous chapters) and excitement for what's next. Emphasize that Sid's lessons will live on with the team.
+
+ADDITIONAL ELEMENTS:
+- Include small callbacks to previous chapters (trophy from Ch1, dinner photo from Ch2, "4 POINTERS" sticky from Ch3, fist bump from Ch4)
+- Warm golden hour lighting
+- Confetti or sparkle effects in final panel
+- Green hearts 💚 and rocket 🚀 emojis

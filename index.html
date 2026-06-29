@@ -1,313 +1,293 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>The Legend of Sid</title>
+  <head>
+    <meta charset="UTF-8" />
+    <title>The Legend of Sid</title>
 
-  <style>
-    body {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background: linear-gradient(135deg, #f5f0e6 0%, #e8e0d0 100%);
-      margin: 0;
-      padding: 20px;
-    }
+    <style>
+      body {
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: linear-gradient(135deg, #f5f0e6 0%, #e8e0d0 100%);
+        margin: 0;
+        padding: 20px;
+      }
 
-    .container {
-      max-width: 900px;
-      margin: auto;
-    }
+      .container {
+        max-width: 900px;
+        margin: auto;
+      }
 
-    .main-title {
-      text-align: center;
-      padding: 40px 20px;
-      margin-bottom: 30px;
-    }
+      .main-title {
+        text-align: center;
+        padding: 40px 20px;
+        margin-bottom: 30px;
+      }
 
-    .main-title h1 {
-      font-size: 3.5rem;
-      color: #2d5a27;
-      margin: 0 0 10px 0;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-    }
+      .main-title h1 {
+        font-size: 3.5rem;
+        color: #2d5a27;
+        margin: 0 0 10px 0;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+      }
 
-    .main-title p {
-      font-size: 1.2rem;
-      color: #555;
-      font-style: italic;
-    }
+      .main-title p {
+        font-size: 1.2rem;
+        color: #555;
+        font-style: italic;
+      }
 
-    .chapter {
-      margin-bottom: 50px;
-    }
+      .chapter {
+        margin-bottom: 50px;
+      }
 
-    .comic-wrapper {
-      position: relative;
-      background: white;
-      border-radius: 16px;
-      overflow: hidden;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.15);
-      border: 4px solid #2d5a27;
-    }
+      .comic-wrapper {
+        position: relative;
+        background: white;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        border: 4px solid #2d5a27;
+      }
 
-    .comic-wrapper img {
-      width: 100%;
-      display: block;
-    }
+      .comic-wrapper img {
+        width: 100%;
+        display: block;
+      }
 
-    .footer {
-      text-align: center;
-      padding: 40px 20px;
-      color: #555;
-      font-size: 1.1rem;
-    }
+      .footer {
+        text-align: center;
+        padding: 40px 20px;
+        color: #555;
+        font-size: 1.1rem;
+      }
 
-    .footer .emoji {
-      font-size: 2.5rem;
-      margin-bottom: 15px;
-    }
+      .footer .emoji {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+      }
 
-    .footer strong {
-      color: #2d5a27;
-    }
+      .footer strong {
+        color: #2d5a27;
+      }
 
-    /* TEXT-BASED CHAPTER STYLES */
-    .text-chapter {
-      background: #faf6f0;
-      border-radius: 16px;
-      padding: 30px;
-      margin-bottom: 50px;
-      border: 4px solid #2d5a27;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.15);
-      position: relative;
-    }
+      /* TEXT-BASED CHAPTER STYLES */
+      .text-chapter {
+        background: #faf6f0;
+        border-radius: 16px;
+        padding: 30px;
+        margin-bottom: 50px;
+        border: 4px solid #2d5a27;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        position: relative;
+      }
 
-    .chapter-header {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      margin-bottom: 20px;
-    }
+      .chapter-header {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 20px;
+      }
 
-    .chapter-badge {
-      background: #f7d74e;
-      color: #333;
-      width: 60px;
-      height: 60px;
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.5rem;
-      font-weight: bold;
-      border: 3px solid #333;
-      box-shadow: 3px 3px 0 #333;
-      flex-shrink: 0;
-    }
+      .chapter-badge {
+        background: #f7d74e;
+        color: #333;
+        width: 60px;
+        height: 60px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        border: 3px solid #333;
+        box-shadow: 3px 3px 0 #333;
+        flex-shrink: 0;
+      }
 
-    .chapter-title-text {
-      font-size: 1.8rem;
-      font-weight: 900;
-      color: #2d5a27;
-      margin: 0;
-    }
+      .chapter-title-text {
+        font-size: 1.8rem;
+        font-weight: 900;
+        color: #2d5a27;
+        margin: 0;
+      }
 
-    .chapter-story {
-      font-size: 1.1rem;
-      line-height: 1.8;
-      color: #333;
-      margin-bottom: 20px;
-    }
+      .chapter-story {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #333;
+        margin-bottom: 20px;
+      }
 
-    .quote-bubble {
-      background: white;
-      border: 3px solid #333;
-      border-radius: 20px;
-      padding: 20px 25px;
-      margin: 20px 0;
-      font-size: 1.3rem;
-      font-style: italic;
-      color: #2d5a27;
-      font-weight: 600;
-      position: relative;
-      box-shadow: 4px 4px 0 #333;
-    }
+      .quote-bubble {
+        background: white;
+        border: 3px solid #333;
+        border-radius: 20px;
+        padding: 20px 25px;
+        margin: 20px 0;
+        font-size: 1.3rem;
+        font-style: italic;
+        color: #2d5a27;
+        font-weight: 600;
+        position: relative;
+        box-shadow: 4px 4px 0 #333;
+      }
 
-    .quote-bubble::after {
-      content: '';
-      position: absolute;
-      bottom: -15px;
-      left: 30px;
-      width: 20px;
-      height: 20px;
-      background: white;
-      border-right: 3px solid #333;
-      border-bottom: 3px solid #333;
-      transform: rotate(45deg);
-    }
+      .quote-bubble::after {
+        content: "";
+        position: absolute;
+        bottom: -15px;
+        left: 30px;
+        width: 20px;
+        height: 20px;
+        background: white;
+        border-right: 3px solid #333;
+        border-bottom: 3px solid #333;
+        transform: rotate(45deg);
+      }
 
-    .quote-bubble.sid-quote {
-      background: #e8f5e9;
-      border-color: #2d5a27;
-    }
+      .quote-bubble.sid-quote {
+        background: #e8f5e9;
+        border-color: #2d5a27;
+      }
 
-    .quote-bubble.sid-quote::after {
-      background: #e8f5e9;
-      border-color: #2d5a27;
-    }
+      .quote-bubble.sid-quote::after {
+        background: #e8f5e9;
+        border-color: #2d5a27;
+      }
 
-    .highlight-box {
-      background: linear-gradient(135deg, #2d5a27 0%, #4a8c3f 100%);
-      color: white;
-      padding: 15px 25px;
-      border-radius: 10px;
-      display: inline-block;
-      margin: 15px 0;
-      font-weight: bold;
-      font-size: 1.1rem;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      border: 3px solid #1a3d17;
-      box-shadow: 4px 4px 0 #1a3d17;
-    }
+      .highlight-box {
+        background: linear-gradient(135deg, #2d5a27 0%, #4a8c3f 100%);
+        color: white;
+        padding: 15px 25px;
+        border-radius: 10px;
+        display: inline-block;
+        margin: 15px 0;
+        font-weight: bold;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        border: 3px solid #1a3d17;
+        box-shadow: 4px 4px 0 #1a3d17;
+      }
 
-    .sandwiched {
-      background: #ff6b35;
-      color: white;
-      padding: 3px 10px;
-      border-radius: 6px;
-      font-weight: bold;
-      border: 2px solid #333;
-    }
+      .sandwiched {
+        background: #ff6b35;
+        color: white;
+        padding: 3px 10px;
+        border-radius: 6px;
+        font-weight: bold;
+        border: 2px solid #333;
+      }
 
-    .emoji-row {
-      display: flex;
-      gap: 10px;
-      margin-top: 15px;
-      font-size: 2rem;
-    }
+      .emoji-row {
+        display: flex;
+        gap: 10px;
+        margin-top: 15px;
+        font-size: 2rem;
+      }
 
-    .story-note {
-      background: #fff9c4;
-      padding: 12px 18px;
-      border-radius: 8px;
-      font-size: 0.95rem;
-      margin-top: 15px;
-      border-left: 4px solid #f7d74e;
-      font-style: italic;
-      color: #555;
-    }
-  </style>
-</head>
+      .story-note {
+        background: #fff9c4;
+        padding: 12px 18px;
+        border-radius: 8px;
+        font-size: 0.95rem;
+        margin-top: 15px;
+        border-left: 4px solid #f7d74e;
+        font-style: italic;
+        color: #555;
+      }
+    </style>
+  </head>
 
-<body>
+  <body>
+    <div class="container">
+      <div class="main-title">
+        <h1>🌟 The Legend of Sid 🌟</h1>
+        <p>A farewell comic for an unforgettable teammate</p>
+      </div>
 
-<div class="container">
+      <!-- CHAPTER 1: THE RULE -->
+      <div class="chapter">
+        <div class="comic-wrapper">
+          <img src="chapter1.png" alt="Chapter 1 - The Rule" />
+        </div>
+      </div>
 
-  <div class="main-title">
-    <h1>🌟 The Legend of Sid 🌟</h1>
-    <p>A farewell comic for an unforgettable teammate</p>
-  </div>
+      <!-- CHAPTER 2: THE WINTER DINNER -->
+      <div class="chapter">
+        <div class="comic-wrapper">
+          <img src="chapter2.png" alt="Chapter 2 - The Winter Dinner" />
+        </div>
+      </div>
 
-  <!-- CHAPTER 1: THE RULE -->
-  <div class="chapter">
-    <div class="comic-wrapper">
-      <img src="chapter1.png" alt="Chapter 1 - The Rule">
+      <!-- CHAPTER 3: THE 4 POINTER PHILOSOPHY -->
+      <div class="chapter">
+        <div class="comic-wrapper">
+          <img src="chapter3.png" alt="Chapter 3 - The 4 Pointer Philosophy" />
+        </div>
+      </div>
+
+      <!-- CHAPTER 4: FROM LUNCH TO TEAMMATE -->
+      <div class="chapter">
+        <div class="comic-wrapper">
+          <img src="chapter4.png" alt="Chapter 4 - From Lunch to Teammate" />
+        </div>
+      </div>
+
+      <!-- CHAPTER 5: CAN THIS BE ASYNC? -->
+      <div class="chapter">
+        <div class="comic-wrapper">
+          <img src="chapter5.png" alt="Chapter 5 - Can This Be Async?" />
+        </div>
+      </div>
+
+      <!-- CHAPTER 6: THE FOOD ADVENTURES -->
+      <div class="chapter">
+        <div class="comic-wrapper">
+          <img src="chapter6.png" alt="Chapter 6 - The Gourmet Paradox" />
+        </div>
+      </div>
+
+      <!-- CHAPTER 7: THE CHILL MASTER -->
+      <div class="chapter">
+        <div class="comic-wrapper">
+          <img src="chapter7.png" alt="Chapter 7 - The Unshakeable One" />
+        </div>
+      </div>
+
+      <!-- CHAPTER 8: THE ARCHITECT -->
+      <div class="chapter">
+        <div class="comic-wrapper">
+          <img src="chapter8.png" alt="Chapter 8 - The Architect" />
+        </div>
+      </div>
+
+      <!-- CHAPTER 9: THE SANDWICHED YEARS -->
+      <div class="chapter">
+        <div class="comic-wrapper">
+          <img src="chapter9.png" alt="Chapter 9 - The Sandwiched Saga" />
+        </div>
+      </div>
+
+      <!-- CHAPTER 10: THE WATERLOO DRIVE -->
+      <div class="chapter">
+        <div class="comic-wrapper">
+          <img
+            src="chapter10.png"
+            alt="Chapter 10 - The Trust Fall (Car Edition)"
+          />
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="emoji">🚀</div>
+        <p><strong>Good luck, Sid!</strong></p>
+        <p>
+          From new-grad chaos to senior-engineer legend.<br />You'll crush it
+          wherever you go.
+        </p>
+        <p style="margin-top: 20px">— Your Manulife Family ❤️</p>
+      </div>
     </div>
-  </div>
-
-  <!-- CHAPTER 2: THE WINTER DINNER -->
-  <div class="chapter">
-    <div class="comic-wrapper">
-      <img src="chapter2.png" alt="Chapter 2 - The Winter Dinner">
-    </div>
-  </div>
-
-  <!-- CHAPTER 3: THE 4 POINTER PHILOSOPHY -->
-  <div class="chapter">
-    <div class="comic-wrapper">
-      <img src="chapter3.png" alt="Chapter 3 - The 4 Pointer Philosophy">
-    </div>
-  </div>
-
-  <!-- CHAPTER 4: FROM LUNCH TO TEAMMATE -->
-  <div class="chapter">
-    <div class="comic-wrapper">
-      <img src="chapter4.png" alt="Chapter 4 - From Lunch to Teammate">
-    </div>
-  </div>
-
-  <!-- CHAPTER 5: CAN THIS BE ASYNC? -->
-  <div class="chapter">
-    <div class="comic-wrapper">
-      <img src="chapter5.png" alt="Chapter 5 - Can This Be Async?">
-    </div>
-  </div>
-
-  <!-- CHAPTER 6: THE FOOD ADVENTURES -->
-  <div class="chapter">
-    <div class="comic-wrapper">
-      <img src="chapter6.png" alt="Chapter 6 - The Gourmet Paradox">
-    </div>
-  </div>
-
-  <!-- CHAPTER 7: THE CHILL MASTER -->
-  <div class="chapter">
-    <div class="comic-wrapper">
-      <img src="chapter7.png" alt="Chapter 7 - The Unshakeable One">
-    </div>
-  </div>
-
-  <!-- CHAPTER 8: THE ARCHITECT -->
-  <div class="chapter">
-    <div class="comic-wrapper">
-      <img src="chapter8.png" alt="Chapter 8 - The Architect">
-    </div>
-  </div>
-
-  <!-- CHAPTER 9: THE SANDWICHED YEARS -->
-  <div class="chapter">
-    <div class="comic-wrapper">
-      <img src="chapter9.png" alt="Chapter 9 - The Sandwiched Saga">
-    </div>
-  </div>
-
-  <!-- CHAPTER 10: THE WATERLOO DRIVE -->
-  <div class="text-chapter">
-    <div class="chapter-header">
-      <div class="chapter-badge">10</div>
-      <h2 class="chapter-title-text">The Trust Fall (Car Edition) 🚗</h2>
-    </div>
-    <p class="chapter-story">
-      The mission: Drive Sid to Waterloo. Meet the team. Simple enough. What could go wrong?
-    </p>
-    <p class="chapter-story">
-      Sid buckles in. Passenger seat. Ready to go.
-    </p>
-    <p class="chapter-story">
-      And then... IMMEDIATELY... the car goes over the curb. 💥
-    </p>
-    <div class="quote-bubble">
-      "OMG that has NEVER happened to me before!" 😳
-    </div>
-    <p class="chapter-story">
-      Sid's face: 😱<br>
-      Sid's internal thoughts: "I'm already scared of driving and THIS is the first thing that happens?!"
-    </p>
-    <p class="chapter-story">
-      The wild part? He STILL trusted the driver for the remaining 2 hours to Waterloo. That's not bravery. That's insanity. Or maybe just... the Sid way.
-    </p>
-    <div class="highlight-box">Trust Level: Maxed Out</div>
-    <div class="emoji-row">🚗 ➡️ 💥😱 ➡️ 🤷 ➡️ 🛣️✨</div>
-  </div>
-
-  <div class="footer">
-    <div class="emoji">🚀</div>
-    <p><strong>Good luck, Sid!</strong></p>
-    <p>From new-grad chaos to senior-engineer legend.<br>You'll crush it wherever you go.</p>
-    <p style="margin-top: 20px;">— Your Manulife Family ❤️</p>
-  </div>
-
-</div>
-
-</body>
+  </body>
 </html>
